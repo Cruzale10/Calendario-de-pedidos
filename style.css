@@ -24,7 +24,7 @@
     width: 80%;
     max-height: 80%;
     background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
-    color: #fff; /* Color del texto */
+    color: #e0f8ff; /* Color del texto */
     padding: 20px; /* Espacio interno */
     border-radius: 8px; /* Bordes redondeados */
     overflow-y: auto; /* Barra de desplazamiento vertical si el contenido es largo */
