@@ -1,0 +1,60 @@
+/* Estilo para los eventos del calendario */
+.fc-event {
+    color: #fff; /* Color del texto de los eventos */
+    border: none; /* Sin borde alrededor de los eventos */
+    padding: 2px; /* Espacio interno para el texto del evento */
+    font-size: 12px; /* Tamaño de la fuente para que el texto sea visible */
+    white-space: normal; /* Permite que el texto se ajuste en múltiples líneas */
+    overflow: hidden; /* Oculta el desbordamiento del contenido del evento */
+    text-overflow: ellipsis; /* Muestra puntos suspensivos si el texto es demasiado largo */
+    box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el tamaño total del elemento */
+}
+
+/* Asegurar que el contenedor de eventos en el calendario pueda mostrar el contenido completo */
+.fc-daygrid-day-events {
+    overflow: visible; /* Permite que los eventos sean visibles en el cuadro del día */
+}
+
+/* Estilo para la caja de información del evento con barra de desplazamiento */
+#eventDetails {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Fijo en la pantalla */
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    max-height: 80%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
+    color: #fff; /* Color del texto */
+    padding: 20px; /* Espacio interno */
+    border-radius: 8px; /* Bordes redondeados */
+    overflow-y: auto; /* Barra de desplazamiento vertical si el contenido es largo */
+    z-index: 1000; /* Asegura que el detalle del evento esté por encima de otros elementos */
+    white-space: pre-line; /* Muestra los saltos de línea en el texto tal como se introducen */
+}
+#closeDetails { /* Botón para cerrar la caja de información */
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ff0000; /* Fondo rojo para el botón de cierre */
+    color: #fff; /* Color del texto del botón */
+    border: none;
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor para indicar que es clickeable */
+}
+
+#closeDetails:hover {
+    background-color: #cc0000; /* Color del botón al pasar el ratón */
+}
+
+/* Estilos específicos para los colores de los eventos */
+.fc-event.bien {
+    background-color: #FFFF00; /* Amarillo para estado "bien" */
+}
+
+.fc-event.mal {
+    background-color: #FF0000; /* Rojo para estado "mal" */
+}
+
+.fc-event.en_tiempo {
+    background-color: #00FF00; /* Verde para estado "en tiempo" */
+}

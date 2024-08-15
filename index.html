@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario de Agenda</title>
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="calendar"></div>
+    <button id="loadFile">Cargar Archivo Excel/CSV</button>
+    
+    <!-- Contenedor para mostrar detalles del evento -->
+    <div id="eventDetails" style="display:none;">
+        <h3 id="eventTitle"></h3>
+        <p id="eventDescription"></p>
+        <button id="closeDetails">Cerrar</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
